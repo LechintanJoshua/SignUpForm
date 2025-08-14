@@ -6,7 +6,73 @@
     <link rel="stylesheet" href="style.css"></link>
     <title>Sign-up Form</title>
 </head>
-<body>
-    
-</body>
+    <div class="image">
+        <img src="Images/a-chosen-soul-rUmr0kPf7Eo-unsplash.jpg" alt="Wire people holding each other" width="400px" height="800px">
+        <div class="logo">
+            <img src="Images/icons8-sign-up-100.png" alt="Writing Pen">
+            <p>Upfront</p>
+        </div>
+
+        <div class="credit">
+            <p>Photo by <a href="https://unsplash.com/@a_chosensoul" target="_blank" rel="noopener noreferer">A Chosen Soul</a>
+                 on <a href="https://unsplash.com/" target="_blank" rel="noopener noreferer">Unsplash</a></p>
+        </div>
+    </div>
+
+    <main>
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life
+            to help you realize your deepest dreams.
+            </p>
+            <p>Sign up now to get started</p>
+        </div>
+        <p>You <em>know</em> you want to.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Textfields followed by <span>*</span> are required</legend>
+                <div>
+                    <div>
+                        <label for="first-name">FIRST NAME <span>*</span></label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" required minlength="3">
+                        <p></p>
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME <span>*</span></label>
+                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" required minlength="3">
+                        <p></p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="email">EMAIL <span>*</span></label>
+                        <input type="email" name="email" id="email" autocomplete="email" required>
+                        <p></p>
+                    </div>
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel">
+                        <p></p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">PASSWORD <span>*</span></label>
+                        <input type="password" name="password" id="password" autocomplete="new-password" required minlength="8">
+                        <p></p>
+                    </div>
+        
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD <span>*</span></label>
+                        <input type="password" name="confirm-password" id="confirm-password" autocomplete="new-password" required minlength="8">
+                        <p></p>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <div>
+                <button>Create Account</button>
+            </div>
+            <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="log-in" target="_blank" rel="noopener noreferer">Log in</a></p>
+        </form>
+    </main>
 </html>
