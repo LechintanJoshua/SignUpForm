@@ -12,6 +12,13 @@
         url("Fonts/pacifico-regular-webfont.woff") format("woff");
 }
 
+:root {
+    --asx-color: red;
+    --bg-color: #fffaee;
+    --photo-color: rgb(255, 255, 255);
+    --form-color: #222831; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,8 +32,21 @@ body {
     font-size: clamp(0.8rem, 1.2rem, 2rem);
 }
 
-main {
+form {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--form-color);
+}
+
+form > * {
+    flex: 1;
+}
+
+span {
+    color: var(--asx-color);
 }
 
 .logo > p {
@@ -47,7 +67,7 @@ main {
 
 .image .logo,
 .image .credit {
-    color: rgb(255, 255, 255);
+    color: var(--photo-color);
     position: absolute;
     left: 50%;
     margin-right: -50%;
@@ -75,4 +95,20 @@ main {
 .image .logo img {
     width: 5vw;
     height: 5vw;
+}
+
+form header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid rebeccapurple;
+}
+
+form header > :nth-child(1) {
+    height: 30%;
+}
+
+form header > :nth-child(n) {
+    margin-left: 2rem;
+    width: 80%;
 }

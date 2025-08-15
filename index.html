@@ -19,60 +19,65 @@
         </div>
     </div>
 
-    <main>
-        <div>
-            <p>This is not a real online service! You know you need something like this in your life
-            to help you realize your deepest dreams.
-            </p>
-            <p>Sign up now to get started</p>
-        </div>
-        <p>You <em>know</em> you want to.</p>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Textfields followed by <span>*</span> are required</legend>
+    <form action="#" method="post">
+        <header>
+            <div>
+            </div>
+            <div>
+                <p>This is not a real online service! You know you need something like this in your life
+                to help you realize your deepest dreams.
+                </p>
+                <p>Sign up now to get started</p>
+            </div>
+            <p>You <em>know</em> you want to.</p>
+        </header>
+
+        <fieldset>
+            <legend>Textfields followed by <span>*</span> are required</legend>
+            <div>
                 <div>
-                    <div>
-                        <label for="first-name">FIRST NAME <span>*</span></label>
-                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" required minlength="3">
-                        <p></p>
-                    </div>
-                    <div>
-                        <label for="last-name">LAST NAME <span>*</span></label>
-                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" required minlength="3">
-                        <p></p>
-                    </div>
+                    <label for="first-name">FIRST NAME <span>*</span></label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" required minlength="3">
+                    <p></p>
                 </div>
                 <div>
-                    <div>
-                        <label for="email">EMAIL <span>*</span></label>
-                        <input type="email" name="email" id="email" autocomplete="email" required>
-                        <p></p>
-                    </div>
-                    <div>
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel">
-                        <p></p>
-                    </div>
+                    <label for="last-name">LAST NAME <span>*</span></label>
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" required minlength="3">
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="email">EMAIL <span>*</span></label>
+                    <input type="email" name="email" id="email" autocomplete="email" required>
+                    <p></p>
                 </div>
                 <div>
-                    <div>
-                        <label for="password">PASSWORD <span>*</span></label>
-                        <input type="password" name="password" id="password" autocomplete="new-password" required minlength="8">
-                        <p></p>
-                    </div>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel">
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="password">PASSWORD <span>*</span></label>
+                    <input type="password" name="password" id="password" autocomplete="new-password" required minlength="8">
+                    <p></p>
+                </div>
         
-                    <div>
-                        <label for="confirm-password">CONFIRM PASSWORD <span>*</span></label>
-                        <input type="password" name="confirm-password" id="confirm-password" autocomplete="new-password" required minlength="8">
-                        <p></p>
-                    </div>
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD <span>*</span></label>
+                    <input type="password" name="confirm-password" id="confirm-password" autocomplete="new-password" required minlength="8">
+                    <p></p>
                 </div>
-            </fieldset>
+            </div>
+        </fieldset>
         
+        <footer>
             <div>
                 <button>Create Account</button>
             </div>
             <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="log-in" target="_blank" rel="noopener noreferer">Log in</a></p>
-        </form>
-    </main>
+        </footer>
+    </form>
 </html>
