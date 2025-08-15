@@ -14,9 +14,11 @@
 
 :root {
     --asx-color: red;
-    --bg-color: #fffaee;
+    --bg-color: #FFFFF0;
     --photo-color: rgb(255, 255, 255);
     --form-color: #222831; 
+    --fieldset-color: white;
+    --box-shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -101,7 +103,6 @@ form header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid rebeccapurple;
 }
 
 form header > :nth-child(1) {
@@ -111,4 +112,39 @@ form header > :nth-child(1) {
 form header > :nth-child(n) {
     margin-left: 2rem;
     width: 80%;
+}
+
+form fieldset {
+    border: none;
+    background-color: var(--fieldset-color);
+    box-shadow: var(--box-shadow-color) 0rem 0.5rem 1rem,
+                var(--box-shadow-color) 0rem -0rem 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.legend {
+    font-size: 1.6rem;
+    margin-top: -1rem;
+}
+
+fieldset .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 25%;
+    font-size: 1rem;
+    gap: 2rem;
+}
+
+fieldset .container > :nth-child(n) {
+    flex: 0 0 50%;
+}
+
+input {
+    width: 100%;
 }
