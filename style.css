@@ -19,6 +19,8 @@
     --form-color: #222831; 
     --fieldset-color: white;
     --box-shadow-color: rgba(0, 0, 0, 0.3);
+    --input-focus-color: #a020f0;
+    --select-color: #00b3b3;
 }
 
 * {
@@ -49,6 +51,18 @@ form > * {
 
 span {
     color: var(--asx-color);
+}
+
+::selection {
+    background-color: var(--select-color);
+    color: var(--bg-color);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: var(--select-color);
+    color: var(--bg-color);
+    text-shadow: none;
 }
 
 .logo > p {
@@ -142,9 +156,23 @@ fieldset .container {
 }
 
 fieldset .container > :nth-child(n) {
+    line-height: 1.5rem;
     flex: 0 0 50%;
 }
 
 input {
     width: 100%;
+    border-radius: 0.3rem;
+    border: 2px solid var(--box-shadow-color);
+    height: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid var(--input-focus-color);
+    box-shadow: 0 0 5px var(--input-focus-color);
+}
+
+input:user-invalid {
+    border: 3px solid var(--asx-color)
 }
